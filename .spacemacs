@@ -315,13 +315,16 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
 
+  ;; Homekey remap (no longer needed with (keyboard-layout 'colemak-hnei))
   ;;(define-key evil-normal-state-map "n" 'evil-next-line)
   ;;(define-key evil-normal-state-map "e" 'evil-previous-line)
   ;;(define-key evil-normal-state-map "i" 'evil-forward-char)
 
   ;; Faster Movements
-  ;;(define-key evil-normal-state-map "N" "5n")
-  ;;(define-key evil-normal-state-map "E" "5e")
+  (define-key evil-normal-state-map "H" "5h")
+  (define-key evil-normal-state-map "N" "5n")
+  (define-key evil-normal-state-map "E" "5e")
+  (define-key evil-normal-state-map "I" "5i")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
