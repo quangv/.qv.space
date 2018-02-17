@@ -325,6 +325,13 @@ you should place your code here."
   (define-key evil-normal-state-map "N" "5n")
   (define-key evil-normal-state-map "E" "5e")
   (define-key evil-normal-state-map "I" "5i")
+
+  ;; Undo/Redo
+  (define-key evil-normal-state-map "l" 'undo)
+  (define-key evil-normal-state-map "L" 'undo-tree-redo)
+
+  ;; Insert-mode
+  (define-key evil-normal-state-map "u" 'evil-insert)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
