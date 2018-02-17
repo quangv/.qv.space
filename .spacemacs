@@ -31,6 +31,7 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+     vimscript
      html
      clojure
      ;; ----------------------------------------------------------------
@@ -315,6 +316,10 @@ you should place your code here."
   (define-key evil-normal-state-map "n" 'evil-next-line)
   (define-key evil-normal-state-map "e" 'evil-previous-line)
   (define-key evil-normal-state-map "i" 'evil-forward-char)
+
+  ;; Faster Movements
+  (define-key evil-normal-state-map "N" "5n")
+  (define-key evil-normal-state-map "E" "5e")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
