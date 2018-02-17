@@ -31,6 +31,7 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+     markdown
      vimscript
      html
      clojure
@@ -331,7 +332,7 @@ you should place your code here."
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (hydra bind-key avy evil goto-chg projectile epl helm helm-core async web-mode tagedit dash slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode clj-refactor inflections edn multiple-cursors paredit yasnippet s peg cider-eval-sexp-fu eval-sexp-fu highlight cider seq spinner queue clojure-mode helm-themes helm-swoop helm-projectile helm-mode-manager helm-flx helm-descbinds helm-ag ace-jump-helm-line which-key wgrep use-package smex pcre2el macrostep ivy-hydra help-fns+ helm-make flx exec-path-from-shell evil-visualstar evil-escape elisp-slime-nav counsel-projectile bind-map auto-compile ace-window))))
+    (mmm-mode markdown-toc markdown-mode gh-md hydra bind-key avy evil goto-chg projectile epl helm helm-core async web-mode tagedit dash slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode clj-refactor inflections edn multiple-cursors paredit yasnippet s peg cider-eval-sexp-fu eval-sexp-fu highlight cider seq spinner queue clojure-mode helm-themes helm-swoop helm-projectile helm-mode-manager helm-flx helm-descbinds helm-ag ace-jump-helm-line which-key wgrep use-package smex pcre2el macrostep ivy-hydra help-fns+ helm-make flx exec-path-from-shell evil-visualstar evil-escape elisp-slime-nav counsel-projectile bind-map auto-compile ace-window))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
