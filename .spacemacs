@@ -30,7 +30,8 @@ values."
    dotspacemacs-configuration-layer-path '()
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(javascript
+   '(typescript
+     javascript
      markdown
      vimscript
      html
@@ -370,7 +371,7 @@ This function is called at the very end of Spacemacs initialization."
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (web-beautify livid-mode skewer-mode json-mode json-snatcher json-reformat js2-refactor js2-mode js-doc helm-gtags ggtags flycheck evil-matchit counsel-gtags counsel swiper ivy company-tern dash-functional tern company coffee-mode add-node-modules-path mmm-mode markdown-toc markdown-mode gh-md hydra bind-key avy evil goto-chg projectile epl helm helm-core async web-mode tagedit dash slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode clj-refactor inflections edn multiple-cursors paredit yasnippet s peg cider-eval-sexp-fu eval-sexp-fu highlight cider seq spinner queue clojure-mode helm-themes helm-swoop helm-projectile helm-mode-manager helm-flx helm-descbinds helm-ag ace-jump-helm-line which-key wgrep use-package smex pcre2el macrostep ivy-hydra help-fns+ helm-make flx exec-path-from-shell evil-visualstar evil-escape elisp-slime-nav counsel-projectile bind-map auto-compile ace-window))))
+    (tide typescript-mode flycheck company add-node-modules-path mmm-mode markdown-toc markdown-mode gh-md hydra bind-key avy evil goto-chg projectile epl helm helm-core async web-mode tagedit dash slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode clj-refactor inflections edn multiple-cursors paredit yasnippet s peg cider-eval-sexp-fu eval-sexp-fu highlight cider seq spinner queue clojure-mode helm-themes helm-swoop helm-projectile helm-mode-manager helm-flx helm-descbinds helm-ag ace-jump-helm-line which-key wgrep use-package smex pcre2el macrostep ivy-hydra help-fns+ helm-make flx exec-path-from-shell evil-visualstar evil-escape elisp-slime-nav counsel-projectile bind-map auto-compile ace-window))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
