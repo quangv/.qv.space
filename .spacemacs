@@ -339,6 +339,9 @@ you should place your code here."
   (define-key evil-normal-state-map "];" 'evil-paste-after)
   (define-key evil-normal-state-map "[;" 'evil-paste-before)
 
+  ;; Replace
+  (define-key evil-normal-state-map "p" 'evil-replace)
+
   ;; Colon
   (define-key evil-normal-state-map "O" 'evil-ex)
   )
