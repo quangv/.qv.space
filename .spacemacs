@@ -336,7 +336,10 @@ you should place your code here."
   ;; Copy/Paste
   (define-key evil-normal-state-map "jj" 'evil-yank-line)
   (define-key evil-normal-state-map "];" 'evil-paste-after)
-  (define-key evil-normal-state-map "[;" 'evil-paste-before )
+  (define-key evil-normal-state-map "[;" 'evil-paste-before)
+
+  ;; Colon
+  (define-key evil-normal-state-map "O" 'evil-ex)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
