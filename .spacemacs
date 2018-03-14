@@ -332,6 +332,11 @@ you should place your code here."
 
   ;; Insert-mode
   (define-key evil-normal-state-map "u" 'evil-insert)
+
+  ;; Copy/Paste
+  (define-key evil-normal-state-map "jj" 'evil-yank-line)
+  (define-key evil-normal-state-map "];" 'evil-paste-after)
+  (define-key evil-normal-state-map "[;" 'evil-paste-before )
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
