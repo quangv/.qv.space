@@ -338,8 +338,9 @@ you should place your code here."
                                           (beginning-of-line-text)
                                           (execute-kbd-macro "u") ))
   ;;(define-key evil-normal-state-map "y" (kbd "A RET"))
-  (define-key evil-normal-state-map "y" "o")
-  (define-key evil-normal-state-map "Y" 'evil-insert)
+  ;;(define-key evil-normal-state-map "y" "o")
+  (define-key evil-normal-state-map "y" 'evil-open-below)
+  (define-key evil-normal-state-map "Y" 'evil-open-above)
 
   ;; Copy/Paste
   (define-key evil-normal-state-map "jj" 'evil-yank-line)
