@@ -334,7 +334,7 @@ you should place your code here."
   ;; Insert-mode
   (define-key evil-normal-state-map "u" 'evil-insert)
   (define-key evil-normal-state-map "U" (lambda () (interactive) (beginning-of-line-text) (execute-kbd-macro "u") ))
-  (define-key evil-normal-state-map "y" 'evil-insert)
+  (define-key evil-normal-state-map "y" "o")
   (define-key evil-normal-state-map "Y" 'evil-insert)
 
   ;; Copy/Paste
