@@ -445,6 +445,8 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
 
+  ;;;; START Colemak Settings
+
   ;; Homekey remap (no longer needed with (keyboard-layout 'colemak-hnei))
   ;;(define-key evil-normal-state-map "n" 'evil-next-line)
   ;;(define-key evil-normal-state-map "e" 'evil-previous-line)
@@ -483,6 +485,10 @@ before packages are loaded."
 
   ;; Colon
   (define-key evil-normal-state-map "O" 'evil-ex)
+
+  ;;;; END Colemak Settings
+
+  ;;(spacemacs/toggle-highlight-current-line-globally-off)
 
   )
 
