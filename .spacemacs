@@ -342,7 +342,9 @@ you should place your code here."
   (define-key evil-normal-state-map "y" 'evil-open-below)
   (define-key evil-normal-state-map "Y" 'evil-open-above)
 
-  ;; Copy/Paste
+  ;; Cut/Copy/Paste
+  (define-key evil-normal-state-map "s" nil)
+  (define-key evil-normal-state-map "ss" 'evil-delete-whole-line)
   (define-key evil-normal-state-map "jj" 'evil-yank-line)
   (define-key evil-normal-state-map "];" 'evil-paste-after)
   (define-key evil-normal-state-map "[;" 'evil-paste-before)
