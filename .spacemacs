@@ -444,6 +444,46 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
+
+  ;; Homekey remap (no longer needed with (keyboard-layout 'colemak-hnei))
+  ;;(define-key evil-normal-state-map "n" 'evil-next-line)
+  ;;(define-key evil-normal-state-map "e" 'evil-previous-line)
+  ;;(define-key evil-normal-state-map "i" 'evil-forward-char)
+
+  ;; Faster Movements
+  (define-key evil-normal-state-map "H" "5h")
+  (define-key evil-normal-state-map "N" "5n")
+  (define-key evil-normal-state-map "E" "5e")
+  (define-key evil-normal-state-map "I" "5i")
+
+  ;; Undo/Redo
+  (define-key evil-normal-state-map "l" 'undo)
+  (define-key evil-normal-state-map "L" 'undo-tree-redo)
+
+  ;; Insert-mode
+  (define-key evil-normal-state-map "u" 'evil-insert)
+  (define-key evil-normal-state-map "U" (lambda ()
+                                          (interactive)
+                                          (beginning-of-line-text)
+                                          (execute-kbd-macro "u")))
+  ;;(define-key evil-normal-state-map "y" (kbd "A RET"))
+  ;;(define-key evil-normal-state-map "y" "o")
+  (define-key evil-normal-state-map "y" 'evil-open-below)
+  (define-key evil-normal-state-map "Y" 'evil-open-above)
+
+  ;; Cut/Copy/Paste
+  (define-key evil-normal-state-map "s" nil)
+  (define-key evil-normal-state-map "ss" 'evil-delete-whole-line)
+  (define-key evil-normal-state-map "jj" 'evil-yank-line)
+  (define-key evil-normal-state-map "];" 'evil-paste-after)
+  (define-key evil-normal-state-map "[;" 'evil-paste-before)
+
+  ;; Replace
+  (define-key evil-normal-state-map "p" 'evil-replace)
+
+  ;; Colon
+  (define-key evil-normal-state-map "O" 'evil-ex)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
