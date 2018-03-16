@@ -10,7 +10,7 @@ values."
    ;; Base distribution to use. This is a layer contained in the directory
    ;; `+distribution'. For now available distributions are `spacemacs-base'
    ;; or `spacemacs'. (default 'spacemacs)
-   dotspacemacs-distribution 'spacemacs-base
+   dotspacemacs-distribution 'spacemacs
    ;; Lazy installation of layers (i.e. layers are installed only when a file
    ;; with a supported type is opened). Possible values are `all', `unused'
    ;; and `nil'. `unused' will lazy install only unused layers (i.e. layers
@@ -30,12 +30,7 @@ values."
    dotspacemacs-configuration-layer-path '()
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(typescript
-     javascript
-     markdown
-     vimscript
-     html
-     clojure
+   '(
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
@@ -54,7 +49,6 @@ values."
      ;; spell-checking
      ;; syntax-checking
      ;; version-control
-     (keyboard-layout :variables kl-layout 'colemak-hnei)
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -315,80 +309,7 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
-
-  ;; Homekey remap (no longer needed with (keyboard-layout 'colemak-hnei))
-  ;;(define-key evil-normal-state-map "n" 'evil-next-line)
-  ;;(define-key evil-normal-state-map "e" 'evil-previous-line)
-  ;;(define-key evil-normal-state-map "i" 'evil-forward-char)
-
-  ;; Faster Movements
-  (define-key evil-normal-state-map "H" "5h")
-  (define-key evil-normal-state-map "N" "5n")
-  (define-key evil-normal-state-map "E" "5e")
-  (define-key evil-normal-state-map "I" "5i")
-
-  ;; Undo/Redo
-  (define-key evil-normal-state-map "l" 'undo)
-  (define-key evil-normal-state-map "L" 'undo-tree-redo)
-
-  ;; Insert-mode
-  (define-key evil-normal-state-map "u" 'evil-insert)
-  (define-key evil-normal-state-map "U" (lambda ()
-                                          (interactive)
-                                          (beginning-of-line-text)
-                                          (execute-kbd-macro "u") ))
-  ;;(define-key evil-normal-state-map "y" (kbd "A RET"))
-  ;;(define-key evil-normal-state-map "y" "o")
-  (define-key evil-normal-state-map "y" 'evil-open-below)
-  (define-key evil-normal-state-map "Y" 'evil-open-above)
-
-  ;; Cut/Copy/Paste
-  (define-key evil-normal-state-map "s" nil)
-  (define-key evil-normal-state-map "ss" 'evil-delete-whole-line)
-  (define-key evil-normal-state-map "jj" 'evil-yank-line)
-  (define-key evil-normal-state-map "];" 'evil-paste-after)
-  (define-key evil-normal-state-map "[;" 'evil-paste-before)
-
-  ;; Replace
-  (define-key evil-normal-state-map "p" 'evil-replace)
-
-  ;; Colon
-  (define-key evil-normal-state-map "O" 'evil-ex)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (mmm-mode markdown-toc markdown-mode gh-md hydra bind-key avy evil goto-chg projectile epl helm helm-core async web-mode tagedit dash slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode clj-refactor inflections edn multiple-cursors paredit yasnippet s peg cider-eval-sexp-fu eval-sexp-fu highlight cider seq spinner queue clojure-mode helm-themes helm-swoop helm-projectile helm-mode-manager helm-flx helm-descbinds helm-ag ace-jump-helm-line which-key wgrep use-package smex pcre2el macrostep ivy-hydra help-fns+ helm-make flx exec-path-from-shell evil-visualstar evil-escape elisp-slime-nav counsel-projectile bind-map auto-compile ace-window))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-(defun dotspacemacs/emacs-custom-settings ()
-  "Emacs custom settings.
-This is an auto-generated function, do not modify its content directly, use
-Emacs customize menu instead.
-This function is called at the very end of Spacemacs initialization."
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (web-beautify vimrc-mode tide typescript-mode flycheck sayid overseer f nameless livid-mode skewer-mode json-mode json-snatcher json-reformat js2-refactor js2-mode js-doc impatient-mode htmlize simple-httpd helm-xref dactyl-mode coffee-mode clojure-cheatsheet pkg-info packed popup undo-tree diminish mmm-mode markdown-toc markdown-mode gh-md hydra bind-key avy evil goto-chg projectile epl helm helm-core async web-mode tagedit dash slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode clj-refactor inflections edn multiple-cursors paredit yasnippet s peg cider-eval-sexp-fu eval-sexp-fu highlight cider seq spinner queue clojure-mode helm-themes helm-swoop helm-projectile helm-mode-manager helm-flx helm-descbinds helm-ag ace-jump-helm-line which-key wgrep use-package smex pcre2el macrostep ivy-hydra help-fns+ helm-make flx exec-path-from-shell evil-visualstar evil-escape elisp-slime-nav counsel-projectile bind-map auto-compile ace-window))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-)
