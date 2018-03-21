@@ -473,10 +473,12 @@ before packages are loaded."
 
   ;; Insert-mode
   (define-key evil-normal-state-map "u" 'evil-insert)
-  (define-key evil-normal-state-map "U" (lambda ()
-                                          (interactive)
-                                          (beginning-of-line-text)
-                                          (execute-kbd-macro "u")))
+  ;;(define-key evil-normal-state-map "U" (lambda ()
+  ;;                                        (interactive)
+  ;;                                        (beginning-of-line-text)
+  ;;                                        (execute-kbd-macro "u")))
+  (define-key evil-normal-state-map "U" 'evil-insert-line)
+
   ;;(define-key evil-normal-state-map "y" (kbd "A RET"))
   ;;(define-key evil-normal-state-map "y" "o")
   (define-key evil-normal-state-map "y" 'evil-open-below)
