@@ -491,6 +491,10 @@ before packages are loaded."
   (define-key evil-normal-state-map "];" 'evil-paste-after)
   (define-key evil-normal-state-map "[;" 'evil-paste-before)
 
+  ;; Navigate
+  (define-key evil-normal-state-map "-" 'evil-goto-first-line)
+  (define-key evil-normal-state-map "_" "G")
+
   ;; Replace
   (define-key evil-normal-state-map "p" 'evil-replace)
 
