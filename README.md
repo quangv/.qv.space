@@ -11,6 +11,13 @@ Spacemacs, VIM + Emacs Configuration
 
 - `C-h t` - Emacs tutorial
 
+- `M-x doctor` - Emacs Psychiatrist
+
+
+**TODO**
+
+- Read the Emacs FAQ?
+
 ### Clojure
 
 - `'cider-jack-in'` - opens nREPL?
