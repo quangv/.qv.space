@@ -3,7 +3,13 @@ Spacemacs, VIM + Emacs Configuration
 ## Useful
 
 - `SPC h d k` - Describes a key
+- `C-h k` - Describes a key
+
+- `C-h f` - Describes a function
+
 - `SPC h k` - List current keybindings
+
+- `C-h t` - Emacs tutorial
 
 ### Clojure
 
