@@ -501,8 +501,11 @@ before packages are loaded."
   ;; Colon
   (define-key evil-normal-state-map "O" 'evil-ex)
 
-  ;; Open a File (replaces tab new)
+  ;; Buffer (tab) open/nav
   (define-key evil-normal-state-map "tn" 'helm-find-files)
+  (define-key evil-normal-state-map "td" 'evil-next-buffer)
+  (define-key evil-normal-state-map "d" nil)
+  (define-key evil-normal-state-map "dt" 'evil-prev-buffer)
 
   ;;;; END Colemak Settings
 
