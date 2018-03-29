@@ -501,6 +501,9 @@ before packages are loaded."
   ;; Colon
   (define-key evil-normal-state-map "O" 'evil-ex)
 
+  ;; Open a File (replaces tab new)
+  (define-key evil-normal-state-map "tn" 'helm-find-files)
+
   ;;;; END Colemak Settings
 
   ;; Remove current line highlighting, not needed because custom theme takes care of this
