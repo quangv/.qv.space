@@ -5,6 +5,10 @@ Spacemacs, VIM + Emacs Configuration
 - `SPC h d k` - Describes a key
 - `SPC h k` - List current keybindings
 
+### Clojure
+
+- `'cider-jack-in'` - opens nREPL?
+
 ## Notes
 
 - Use `develop` branch currently, to get `Colemak` keybindings.
