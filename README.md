@@ -1,5 +1,10 @@
 Spacemacs, VIM + Emacs Configuration
 
+## Useful
+
+- `SPC h d k` - Describes a key
+- `SPC h k` - List current keybindings
+
 ## Notes
 
 - Use `develop` branch currently, to get `Colemak` keybindings.
