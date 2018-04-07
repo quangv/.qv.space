@@ -13,6 +13,17 @@ Spacemacs, VIM + Emacs Configuration
 
 - `M-x doctor` - Emacs Psychiatrist
 
+### Emacs Cut/Paste (with kill-ring)
+
+1. `C-s` (C-d in qwerty) to delete lines to kill-ring.
+2. `C-j` (C-y in qwerty) to paste.
+  
+### Set Mark (Visual mode)
+
+1. `v` - to enter Visual mode `V` for visual-line mode.
+2. `x` - cut/kill
+3. Paste as normal, `[;` paste before, `];` paste after
+
 ### Learn how to use...
 
 - `SPC u` - (C-u) `universal-arguments repeat the next command n times (four times if you omit n).
