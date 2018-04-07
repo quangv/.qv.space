@@ -491,6 +491,11 @@ before packages are loaded."
   (define-key evil-normal-state-map "];" 'evil-paste-after)
   (define-key evil-normal-state-map "[;" 'evil-paste-before)
 
+  ;; Emacs style Cut/Paste
+  (global-set-key (kbd "C-j") 'yank)  ; C-y (on qwerty)
+  (global-set-key (kbd "C-s") 'kill-line)  ; C-d (on qwerty)  (able to chain deletes in the kill-ring)
+  ;;(define-key evil-normal-state-map (kbd "C-e") 'kill-line)  ; C-k (on qwerty) 
+
   ;; Navigate
   (define-key evil-normal-state-map "-" 'evil-goto-first-line)
   (define-key evil-normal-state-map "_" "G")
