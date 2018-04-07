@@ -13,6 +13,10 @@ Spacemacs, VIM + Emacs Configuration
 
 - `M-x doctor` - Emacs Psychiatrist
 
+### Learn how to use...
+
+- `SPC u` - (C-u) `universal-arguments repeat the next command n times (four times if you omit n).
+  - `M-{n}` - Repeat the next command n times.
 
 **TODO**
 
