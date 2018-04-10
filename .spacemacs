@@ -494,7 +494,9 @@ before packages are loaded."
   ;; Emacs style Cut/Paste
   (global-set-key (kbd "C-j") 'yank)  ; C-y (on qwerty)
   (global-set-key (kbd "C-s") 'kill-line)  ; C-d (on qwerty)  (able to chain deletes in the kill-ring)
-  ;;(define-key evil-normal-state-map (kbd "C-e") 'kill-line)  ; C-k (on qwerty) 
+  ;;(define-key evil-normal-state-map (kbd "C-e") 'kill-line)  ; C-k (on qwerty)
+
+  ;;(TODO? can use C-{num} instead define-key evil-normal-state-map (kbd "C-u") 'universal-argument)  ; C-u (on qwerty)  (able to chain deletes in the kill-ring)
 
   ;; Navigate
   (define-key evil-normal-state-map "-" 'evil-goto-first-line)
@@ -507,6 +509,7 @@ before packages are loaded."
   (define-key evil-normal-state-map "O" 'evil-ex)
 
   ;; Buffer (tab) open/nav
+  ;; TODO (define-key evil-normal-state-map "tt" " bb")
   (define-key evil-normal-state-map "tn" 'helm-find-files)
   (define-key evil-normal-state-map "td" 'evil-next-buffer)
   (define-key evil-normal-state-map "d" nil)
