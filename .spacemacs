@@ -94,7 +94,7 @@ It should only modify the values of Spacemacs settings."
   ;; spacemacs settings.
   (setq-default
    ;; Custom
-   auto-save-file-name-transforms `((".*" "~/.emacs-saves/" t))
+   create-lockfiles nil
 
    ;; If non-nil ELPA repositories are contacted via HTTPS whenever it's
    ;; possible. Set it to nil if you have no way to use HTTPS in your
