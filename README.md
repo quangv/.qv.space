@@ -11,6 +11,8 @@ Spacemacs, VIM + Emacs Configuration
 
 - `C-h v` - describe variable
 
+- `C-h m` - describe current modes
+
 - `C-h t` - Emacs tutorial
 
 - `M-x doctor` - Emacs Psychiatrist
