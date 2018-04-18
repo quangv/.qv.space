@@ -9,6 +9,8 @@ Spacemacs, VIM + Emacs Configuration
 
 - `SPC h k` - List current keybindings
 
+- `C-h v` - describe variable
+
 - `C-h t` - Emacs tutorial
 
 - `M-x doctor` - Emacs Psychiatrist
