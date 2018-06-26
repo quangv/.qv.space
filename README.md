@@ -28,6 +28,15 @@ Spacemacs, VIM + Emacs Configuration
 2. `x` - cut/kill
 3. Paste as normal, `[;` paste before, `];` paste after
 
+### Indent Selection
+
+```
+Indenting highlighted text    Type > or < to indent right or left.    (to indent more, type 2> or 3>)
+```
+
+https://simpletutorials.com/c/3036/Spacemacs+%28Vim+mode%29+Cheatsheet
+
+
 ### Learn how to use...
 
 - `SPC u` - (C-u) `universal-arguments repeat the next command n times (four times if you omit n).
